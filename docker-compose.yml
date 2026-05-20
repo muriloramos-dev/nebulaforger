@@ -18,7 +18,7 @@ services:
     hostname: nebula-postgres
     restart: always
     environment:
-      - POSTGRES_USERNAME=ilXOMMnBGECRwyB6arz22LgfYnvZSAtvlTAmTH8q51s=
+      - POSTGRES_USER=ilXOMMnBGECRwyB6arz22LgfYnvZSAtvlTAmTH8q51s=
       - POSTGRES_PASSWORD=YdJQ5KhU3x1kWSq69AxCC54BTF82W1w9F1Sub+qq9Zk=
       - POSTGRES_DB=nebulaforge
     ports:
