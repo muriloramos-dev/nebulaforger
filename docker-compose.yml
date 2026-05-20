@@ -6,6 +6,8 @@ services:
       context: ./
     ports:
       - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
     container_name: nebula-backend
     hostname: nebula-backend
     restart: always
@@ -19,7 +21,6 @@ services:
       - POSTGRES_USERNAME=ilXOMMnBGECRwyB6arz22LgfYnvZSAtvlTAmTH8q51s=
       - POSTGRES_PASSWORD=YdJQ5KhU3x1kWSq69AxCC54BTF82W1w9F1Sub+qq9Zk=
       - POSTGRES_DB=nebulaforge
-      - SPRING_PROFILES_ACTIVE=prod
     ports:
       - "5432:5432"
     volumes:
